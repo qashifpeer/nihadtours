@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 
 
@@ -28,7 +27,7 @@ const Cards: React.FC = () => {
       </h2>
       <div className="flex flex-col items-center">
         <p className="text-center text-slate-100 mt-4 font-kalam">
-        Our mission is simple: to be the leading provider of Kashmir travel experiences, offering well-rounded, immersive packages that cater to every traveller—whether it's couples on their honeymoon, families exploring together, or adventurers seeking new thrills. We are guided by values of integrity, quality service, and a passion for delivering unique, authentic experiences. We prioritise customer satisfaction, attention to detail, and sustainable tourism to preserve the natural beauty of Kashmir for generations to come.
+        Our mission is simple: to be the leading provider of Kashmir travel experiences, offering well-rounded, immersive packages that cater to every traveller—whether its couples on their honeymoon, families exploring together, or adventurers seeking new thrills. We are guided by values of integrity, quality service, and a passion for delivering unique, authentic experiences. We prioritise customer satisfaction, attention to detail, and sustainable tourism to preserve the natural beauty of Kashmir for generations to come.
         </p>
       </div>
     </section>
@@ -40,7 +39,7 @@ const Cards: React.FC = () => {
       </h2>
       <div className="flex flex-col items-center">
         <p className="text-center text-slate-100 mt-4 font-kalam">
-        We are not just selling packages; we are crafting journeys. At  Nihad Tour and Travels, we believe that travel should inspire, rejuvenate, and bring you closer to the wonders of the world. Kashmir is more than just a destination—it's an experience waiting to be discovered, and we’re here to guide you every step of the way.
+        We are not just selling packages; we are crafting journeys. At  Nihad Tour and Travels, we believe that travel should inspire, rejuvenate, and bring you closer to the wonders of the world. Kashmir is more than just a destination— its an experience waiting to be discovered, and we are here to guide you every step of the way.
 
         </p>
       </div>
