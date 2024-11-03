@@ -1,7 +1,16 @@
 "use client"
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
+const NavItems = [
+  {title: "Home", link: "/"},
+  {title: "About", link: "/about"},
+  {title: "Destinations", link: "/destinations"},
+  {title: "Packages", link: "/packages"},
+  {title: "Contact", link: "/contact"},
+
+]
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,15 +22,15 @@ const Navbar: React.FC = () => {
           <div className="flex items-center space-x-4">
             <div className="text-lg font-semibold">Logo</div>
             <div className="hidden md:flex space-x-4">
-              {["Home", "About", "Destinations", "Contact"].map((item) => (
-                <a
-                  key={item}
-                  href="#"
+              {NavItems.map((item,index) => (
+                <Link
+                  key={index}
+                  href={item.link}
                   className="relative px-2 py-1 hover:text-gray-300"
                 >
                   <span className="hover:before:absolute hover:before:top-0 hover:before:left-0 hover:before:w-full hover:before:h-0.5 hover:before:bg-orange-500 hover:before:content-['']"></span>
-                  {item}
-                </a>
+                  {item.title}
+                </Link>
               ))}
             </div>
           </div>

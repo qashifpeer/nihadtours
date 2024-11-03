@@ -5,7 +5,7 @@ import React from "react";
 
 const Cards: React.FC = () => {
   return (
-    <div className="">
+    <div className="container">
       {/* What do we beleive */}
       <section className="relative w-full max-w-4xl mx-auto mt-16 p-8 border-2 border-orange-800">
       <h2 className="absolute -top-6 right-6 bg-orange-800 rounded px-2 text-xl ubuntu-regular text-white">

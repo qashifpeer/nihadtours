@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-black text-white py-8 px-4">
       <div className="">
 
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="container-fluid mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
              {/* Section 1 - Links */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
       
         {/* Section 4 - Copyright */}
         <div className="flex items-center justify-center md:justify-end mt-4">
-          <p className="text-sm">&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+          <p className="text-sm">&copy; {new Date().getFullYear()} Al Nahda Tours & Travels. All rights reserved.</p>
         </div>
       </div>
     </footer>

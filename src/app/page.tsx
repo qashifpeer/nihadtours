@@ -1,4 +1,4 @@
-import { Hero, HeroWithCards, TourPackages } from "@/components";
+import { Banner, Feedback, Hero, HeroWithCards, TourPackages } from "@/components";
 
 
 export default function Home() {
@@ -7,8 +7,8 @@ export default function Home() {
       <Hero />
       <HeroWithCards />
       <TourPackages />
-      {/* <Navbar /> */}
-      {/* Add your page content here */}
+      <Feedback />
+      <Banner />
     
     </div>
   );
