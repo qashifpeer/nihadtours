@@ -44,10 +44,10 @@ export default async function PackagePage({ params }: PackageProps) {
       <div className="w-3/4">
         {packageData.tourDays.map((day, i) => (
           <div
-            className="bg-slate-900 rounded w-full flex gap-6 px-4 py-2 mt-2"
+            className="bg-slate-950 rounded w-full flex gap-6 px-4 py-2 mt-2"
             key={i}
           >
-            <p className="rounded-lg text-base text-orange-800 bg-slate-100 px-4 py-2 ubuntu-bold capitalize">
+            <p className="rounded-lg text-base text-orange-800 bg-slate-100 px-4 py-2 ubuntu-bold uppercase">
               {day.title}
             </p>
             <p className=" px-4 py-2 ubuntu-regular capitalize">{day.desc}</p>

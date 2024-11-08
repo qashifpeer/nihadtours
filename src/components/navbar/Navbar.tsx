@@ -20,7 +20,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           {/* Left Menu */}
           <div className="flex items-center space-x-4">
-            <div className="text-lg font-semibold">Logo</div>
+            <div className="text-lg font-semibold">
+              N<span className="uppercase text-2xl text-orange-800">t</span>
+            </div>
             <div className="hidden md:flex space-x-4">
               {NavItems.map((item,index) => (
                 <Link
@@ -78,14 +80,14 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {["Home", "About", "Destinations", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
+            {NavItems.map((item, index) => (
+              <Link
+                key={index}
+                href={item.link}
                 className="block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300"
               >
-                {item}
-              </a>
+                {item.title}
+              </Link>
             ))}
             <div className="flex space-x-3 mt-4">
               <a href="#" aria-label="Facebook" className="hover:text-gray-400">
