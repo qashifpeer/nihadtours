@@ -70,7 +70,7 @@ const Feedback: React.FC = () => {
 
   return (
     <div className="relative container mx-auto px-4 py-8">
-      <h2 className="text-2xl text-center mb-6 uppercase font-kalam"><span className="text-orange-800 text-4xl">&quot;</span>What Our Travelers Say <span className="text-orange-800 text-4xl">&quot;</span></h2>
+      <h2 className="text-2xl text-center mb-6 uppercase font-kalam text-slate-200"><span className="text-orange-800 text-4xl">&quot;</span>What Our Travelers Say <span className="text-orange-800 text-4xl">&quot;</span></h2>
       
       {/* Arrow Buttons */}
       <button

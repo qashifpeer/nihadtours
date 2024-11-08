@@ -5,6 +5,10 @@ import {packagesData} from "@/constants/packages"
 
 
 const TourPackages: React.FC = () => {
+
+  // Slice the array to get the latest four packages
+  const latestPackages = packagesData.slice(0, 4);
+
   return (
     <div className="container">
     
@@ -13,7 +17,7 @@ const TourPackages: React.FC = () => {
       <FaCanadianMapleLeaf className="text-xl" />
     </div>
     <div className="mx-auto py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      {packagesData.map((pkg, index) => (
+      {latestPackages.map((pkg, index) => (
         <Link key={index} href={`packages/${pkg.slug}`}>
           <div
             className="relative w-full h-96 bg-cover bg-center rounded-lg shadow-lg cursor-pointer"

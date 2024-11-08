@@ -21,7 +21,9 @@ export default async function PackagePage({ params }: PackageProps) {
   }
 
   return (
-    <div className="container px-4 py-8 flex flex-col justify-center items-center">
+    
+    <div className="bg-black">
+      <div className="container px-4 py-8 flex flex-col justify-center items-center">
       <h1 className="text-2xl font-bold mb-4"></h1>
       <div className="flex justify-center items-center w-3/4">
         <Image
@@ -50,11 +52,11 @@ export default async function PackagePage({ params }: PackageProps) {
             <p className="rounded-lg text-base text-orange-800 bg-slate-100 px-4 py-2 ubuntu-bold uppercase">
               {day.title}
             </p>
-            <p className=" px-4 py-2 ubuntu-regular capitalize">{day.desc}</p>
+            <p className=" px-4 py-2 ubuntu-regular capitalize text-slate-300">{day.desc}</p>
           </div>
         ))}
       </div>
-     
+      </div>
     </div>
   );
 }

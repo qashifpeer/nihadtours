@@ -3,7 +3,7 @@ import { Banner, Feedback, Hero, HeroWithCards, TourPackages } from "@/component
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <Hero />
       <HeroWithCards />
       <TourPackages />

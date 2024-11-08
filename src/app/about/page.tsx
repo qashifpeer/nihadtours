@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center py-10 px-5">
+    <div className="min-h-screen flex flex-col items-center py-10 px-5 bg-black">
       <div className="shadow-md rounded-lg max-w-3xl w-full p-8">
         <h1 className="text-4xl font-semibold text-center text-gray-200 mb-8">
           About Us
