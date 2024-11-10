@@ -9,7 +9,7 @@ export default function Home() {
       <TourPackages />
       <Feedback />
       <Banner />
-      
+      <Leads />
     
     </div>
   );
