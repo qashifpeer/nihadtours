@@ -1,4 +1,4 @@
-import { Banner, Feedback, Hero, HeroWithCards, TourPackages } from "@/components";
+import { Banner, Feedback, Hero, HeroWithCards, Leads, TourPackages } from "@/components";
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <TourPackages />
       <Feedback />
       <Banner />
+      
     
     </div>
   );

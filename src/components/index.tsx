@@ -5,6 +5,7 @@ import TourPackages from "./tourPackages/TourPackages";
 import Footer from "./footer/Footer";
 import Feedback from "./feedback/Feedback";
 import Banner from "./banner/Banner";
+import Leads from "./leads/Leads"
 
 
 export {
@@ -14,6 +15,7 @@ export {
     TourPackages,
     Footer,
     Feedback,
-    Banner
+    Banner,
+    Leads,
  
 }

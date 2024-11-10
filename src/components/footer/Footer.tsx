@@ -37,10 +37,10 @@ const Footer: React.FC = () => {
           <h3 className="text-lg font-semibold mb-4">Connect with Us</h3>
           <div className="flex space-x-4">
             
-            <a href="#" className="hover:text-gray-400"><FaWhatsapp size={24} /></a>
-            <a href="#" className="hover:text-gray-400"><FaTwitter size={24} /></a>
-            <a href="#" className="hover:text-gray-400"><FaPhone size={24} /></a>
-            <a href="#" className="hover:text-gray-400"><FaInstagram size={24} /></a>
+            <a href="https://wa.me/+917006031831" target="blank" className="hover:text-gray-400"><FaWhatsapp size={24} /></a>
+            {/* <a href="#" className="hover:text-gray-400"><FaTwitter size={24} /></a> */}
+            <a href="tel:+917006031831" className="hover:text-gray-400"><FaPhone size={24} /></a>
+            <a href="https://www.instagram.com/nihad.tour/" target="blank" className="hover:text-gray-400"><FaInstagram size={24} /></a>
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const NavItems = [
   {title: "Home", link: "/"},
@@ -39,13 +39,13 @@ const Navbar: React.FC = () => {
 
           {/* Right Social Icons */}
           <div className="hidden md:flex items-center space-x-3">
-            <a href="#" aria-label="Facebook" className="hover:text-gray-400">
+            <a href="#" target="blank" aria-label="Facebook" className="hover:text-gray-400">
               <FaFacebook />
             </a>
-            <a href="#" aria-label="Twitter" className="hover:text-gray-400">
-              <FaTwitter />
+            <a href="https://www.instagram.com/nihad.tour/" target="blank" aria-label="Instagram" className="hover:text-gray-400">
+              <FaInstagram />
             </a>
-            <a href="#" aria-label="Whatsapp" className="hover:text-gray-400">
+            <a href="https://wa.me/+917006031831" target="blank" aria-label="Whatsapp" className="hover:text-gray-400">
               <FaWhatsapp />
             </a>
           </div>
