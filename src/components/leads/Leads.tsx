@@ -40,7 +40,7 @@ const FeedbackForm: React.FC = () => {
   return (
     <div className="w-full mx-auto bg-white shadow-md rounded-lg p-4">
       
-      {status && <p className="text-center text-sm mb-4">{status}</p>}
+      {status && <p className="text-center text-sm mb-4 text-green-800">{status}</p>}
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-2  justify-between items-center">
         <div className=''>
           <input
