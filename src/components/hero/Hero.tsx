@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import hero from "@/../../public/images/hero.jpg";
+import hero from "@/../../public/images/hero3.jpg";
 import { motion, useInView } from "framer-motion";
 import { Leads } from "..";
 

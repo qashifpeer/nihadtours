@@ -3,52 +3,9 @@ import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { feedbackData } from "@/constants/feedback";
 
-interface FeedbackCardProps {
-  name: string;
-  address: string;
-  review: string;
-  image: string;
-}
 
-const feedbackData: FeedbackCardProps[] = [
-  {
-    name: "Abishek Kumar",
-    address: "Bihar, India",
-    review: "An amazing experience! The team organized everything perfectly.",
-    image: "/images/people/abishek.jpg",
-  },
-  {
-    name: "Manoj Sinha",
-    address: "Bihar,India",
-    review: "Beautiful locations and well-organized trips. Highly recommended!",
-    image: "/images/people/manoj.jpg",
-  },
-  {
-    name: "Saransh Vishvekarma",
-    address: "Bihar, India",
-    review: "A wonderful adventure! Thanks to the team for a memorable trip.",
-    image: "/images/people/saransh.jpg",
-  },
-  {
-    name: "Abishek Kumar",
-    address: "Bihar, India",
-    review: "An amazing experience! The team organized everything perfectly.",
-    image: "/images/people/p1.jpg",
-  },
-  {
-    name: "Abishek Kumar",
-    address: "Bihar, India",
-    review: "Beautiful locations and well-organized trips. Highly recommended!",
-    image: "/images/people/p1.jpg",
-  },
-  {
-    name: "Saransh Vishvekarma",
-    address: "Bihar, India",
-    review: "A wonderful adventure! Thanks to the team for a memorable trip.",
-    image: "/images/people/p1.jpg",
-  },
-];
 
 const Feedback: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });

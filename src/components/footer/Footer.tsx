@@ -16,6 +16,7 @@ const Footer: React.FC = () => {
             <li><Link href="/about" className="hover:underline">About</Link> <a ></a></li>
             <li><Link href="/contact" className="hover:underline">Contact</Link> <a ></a></li>
             <li><Link href="/resolution" className="hover:underline">Resolution</Link> <a ></a></li>
+            <li><Link href="/gallery" className="hover:underline">Gallery</Link> <a ></a></li>
             
             <li><a href="#" className="hover:underline"></a></li>
           </ul>
@@ -53,7 +54,7 @@ const Footer: React.FC = () => {
         {/* Section 4 - Copyright */}
         <div className="flex items-center  md:flex-col mt-4">
           <p className="text-sm">Designed and Maintaned by : <a href="https://compsoftsol.in/" target="blank" className="text-orange-800 font-bold underline">Compsoft</a> </p>
-          <p className="text-sm">&copy; {new Date().getFullYear()} Nahad Tours & Travels. All rights reserved.</p>
+          <p className="text-sm">&copy; {new Date().getFullYear()} Nihad Tours & Travels. All rights reserved.</p>
         </div>
       </div>
     </footer>

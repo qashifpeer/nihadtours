@@ -1,5 +1,10 @@
 "use client";
-// components/FeedbackForm.tsx
+import {
+  FaLocationArrow,
+  FaEnvelopeOpen,
+  FaPhoneVolume,
+} from "react-icons/fa6";
+
 import React, { useState } from "react";
 
 const ContactPage: React.FC = () => {
@@ -40,140 +45,107 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="mx-auto bg-white shadow-md rounded-lg p- max-w-lg w-full">
-      <h1 className="text-3xl font-semibold text-gray-800 text-center mb-6 max-w-lg underline uppercase pt-4">
-            Contact Us
-          </h1>
-      {status && <p className="text-center text-sm mb-4">{status}</p>}
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col  gap-2  justify-between items-center"
-      >
-        <div className="">
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <input
-            type="tel"
-            placeholder="Phone"
-            className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            required
-          />
-        </div>
-        <label className="block text-sm font-medium text-gray-500">
-          Arrival Date
-        </label>
-        <div>
-          <input
-            type="date"
-            className="border-2 border-orange-800 w-52 rounded-3xl p-2 shadow-sm text-black uppercase"
-            value={arrivalDate}
-            onChange={(e) => setArrivalDate(e.target.value)}
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          disabled={loading} // Disable button when loading is true
-          className={`border-2 border-orange-800 w-40 rounded-3xl p-2 mt-5 shadow-sm uppercase ubuntu-bold transition-all delay-75 duration-200 ${
-            loading
-              ? "bg-gray-400 text-gray-700 cursor-not-allowed"
-              : "text-orange-800 hover:bg-orange-700 hover:text-white"
-          }`}
+    <div className="bg-black">
+      <div className="mx-auto bg-slate-100 shadow-md rounded-lg max-w-[80%] w-full">
+        <h1 className="text-3xl text-center font-semibold text-gray-800 mb-6 max-w-lg underline uppercase pt-4">
+          Contact Us
+        </h1>
+        {status && <p className="text-center text-sm mb-4">{status}</p>}
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col md:flex-row gap-2  justify-center items-center"
         >
-          {loading ? "Sending..." : "Get A Callback"}
-        </button>
-      </form>
+          <div className="">
+            <input
+              type="text"
+              placeholder="Name"
+              className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="tel"
+              placeholder="Phone"
+              className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+          <label className="block text-sm font-medium text-gray-500">
+            Arrival Date
+          </label>
+          <div>
+            <input
+              type="date"
+              className="border-2 border-orange-800 w-52 rounded-3xl p-2 shadow-sm text-black uppercase"
+              value={arrivalDate}
+              onChange={(e) => setArrivalDate(e.target.value)}
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={loading} // Disable button when loading is true
+            className={`border-2 border-orange-800 w-40 rounded-3xl p-2 ml-4 shadow-sm uppercase ubuntu-bold transition-all delay-75 duration-200 ${
+              loading
+                ? "bg-gray-400 text-gray-700 cursor-not-allowed"
+                : "text-orange-800 hover:bg-orange-700 hover:text-white"
+            }`}
+          >
+            {loading ? "Sending..." : "Get A Callback"}
+          </button>
+        </form>
 
-      <p className="border-2 border-slate-400 mt-4"></p>
+        <p className="border-2 border-slate-200 mt-4"></p>
 
-      {/* contact page section */}
-      <div className="flex items-center justify-center bg-gray-100">
-        <div className="bg-white shadow-md rounded-lg px-8 py-2 max-w-lg w-full">
-          
-          <div className="space-y-4">
-            {/* Email Section */}
-            <div className="flex items-center">
-              <div className="bg-blue-500 p-3 rounded-full text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 12V16m0 0v4m0-4h4m-4 0H8m4 0v-4"
-                  />
-                </svg>
+        {/* contact page section */}
+        <div className="flex items-center justify-center">
+          <div className="bg-slate-100 shadow-md rounded-lg px-8 py-2 w-full">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+              {/* Email card */}
+              <div className="flex flex-col justify-center items-center bg-slate-200 w-72 py-8 rounded-lg min-h-72 hover:translate-x-4 hover:-translate-y-4 transition-all duration-300">
+                <div className="text-orange-700 p-3 rounded-full  text-4xl">
+                  <FaEnvelopeOpen />
+                </div>
+                <div className="flex flex-col items-center">
+                  <p className="text-2xl font-bold text-slate-700">
+                    Email Address
+                  </p>
+                  <p className="text-gray-600">info@nihadtours.com</p>
+                  <p className="text-gray-600">nihadtourandtravel@gmail.com</p>
+                </div>
               </div>
-              <div className="ml-4">
-                <p className="text-lg font-medium text-gray-700">Email</p>
-                <p className="text-gray-600">info@nihadtours.com</p>
-                <p className="text-gray-600">nihadtourandtravel@gmail.com</p>
-              </div>
-            </div>
 
-            {/* Phone Section */}
-            
-            <div className="flex items-center">
-              <div className="bg-green-500 p-3 rounded-full text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 12V16m0 0v4m0-4h4m-4 0H8m4 0v-4"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-lg font-medium text-gray-700">Phone</p>
-                <p className="text-gray-600">+91 7006031831</p>
-              </div>
-            </div>
+              {/* Phone card */}
 
-            {/* Address Section */}
-            <div className="flex items-center pb-4">
-              <div className="bg-red-500 p-3 rounded-full text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 12V16m0 0v4m0-4h4m-4 0H8m4 0v-4"
-                  />
-                </svg>
+              <div className="flex flex-col justify-center items-center bg-slate-200 w-72 py-8 rounded-lg min-h-72 hover:translate-x-4 hover:-translate-y-4 transition-all duration-300">
+                <div className="text-blue-700 p-3 rounded-full  text-4xl">
+                  <FaPhoneVolume />
+                </div>
+                <div className="flex flex-col items-center">
+                <p className="text-2xl font-bold text-slate-700">
+                Phone</p>
+                  <p className="text-gray-600">+91 7006031831</p>
+                </div>
               </div>
-              <div className="ml-4">
-                <p className="text-lg font-medium text-gray-700">Address</p>
-                <p className="text-gray-600">
-                  Bemina Srinagar, Jammu and Kashmir
-                </p>
+
+              {/* Address card */}
+              <div className="flex flex-col justify-center items-center bg-slate-200 w-72 py-8 rounded-lg min-h-72 hover:translate-x-4 hover:-translate-y-4 transition-all duration-300">
+                <div className="text-green-700 p-3 rounded-full  text-4xl">
+                  <FaLocationArrow />
+                </div>
+                <div className="flex flex-col items-center">
+                <p className="text-2xl font-bold text-slate-700">
+                Office Location
+                  </p>
+                  <p className="text-gray-600">
+                    Bemina Srinagar, Jammu and Kashmir
+                  </p>
+                </div>
               </div>
             </div>
           </div>

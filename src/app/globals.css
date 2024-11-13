@@ -11,6 +11,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* Embla caousal */
+.embla__slide {
+  min-width: 100%;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
