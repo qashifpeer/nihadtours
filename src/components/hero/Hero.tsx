@@ -9,7 +9,7 @@ import { Leads } from "..";
 const Hero: React.FC = () => {
   return (
     <section className="flex flex-col items-center justify-center overflow-hidden">
-      <div className="relative w-full h-[100vh]">
+      <div className="relative w-full h-[65vh] md:h-[100vh] ">
         {/* Image with fade-in animation */}
         <motion.div
           initial={{ opacity: 0 }}
