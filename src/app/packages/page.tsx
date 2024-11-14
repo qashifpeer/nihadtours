@@ -6,9 +6,9 @@ import { packagesData } from "@/constants/packages";
 const Packages: React.FC = () => {
   return (
     <div className="bg-black">
-      <div className="container">
+      <div className="md:container container-fluid">
         <div className=" flex justify-center items-center gap-2 bg-gradient-to-r from-orange-800 to-slate-900">
-          <h2 className="text-xl text-slate-100   uppercase font-kalam py-2">
+          <h2 className="text-xl text-slate-100   uppercase font-kalam py-2 text-center">
             Beautifully Crafted Packages For You
           </h2>
           <FaMartiniGlassCitrus className="text-2xl bg-slate-100 rounded-full p-1 text-orange-800 text-center" />

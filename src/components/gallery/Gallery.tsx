@@ -2,20 +2,22 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { galleryData, GalleryItemProps } from "@/constants/gallery";
+import { div } from "framer-motion/client";
 
 
 const Gallery: React.FC = () => {
   const [activeImage, setActiveImage] = useState<GalleryItemProps | null>(null);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+    <div className="container-fluid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
       {galleryData.map((item) => (
         <div
           key={item.id}
           className="relative overflow-hidden rounded-lg cursor-pointer group"
           onClick={() => setActiveImage(item)}
         >
-          <div className="relative w-full h-48 transition-transform duration-300 transform group-hover:scale-110 group-hover:z-10">
+          <div className="relative w-full h-48 transition-transform duration-1000 delay-200 transform group-hover:scale-150 group-hover:z-10">
             <Image
               src={item.src}
               alt={item.alt}
@@ -52,7 +54,10 @@ const Gallery: React.FC = () => {
         </div>
       )}
     </div>
+    </div>
+    
   );
+
 };
 
 export default Gallery;
