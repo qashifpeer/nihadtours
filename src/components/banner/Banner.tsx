@@ -5,7 +5,7 @@ import React from "react";
 const Banner: React.FC = () => {
   return (
     <div className="container flex justify-center items-center">
-      <Link href={'#'}>
+      <Link href={'/contact'}>
         <Image
           src="/images/banner/discount.png"
           width={780}

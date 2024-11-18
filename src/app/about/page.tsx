@@ -58,11 +58,11 @@ const AboutPage: React.FC = () => {
           </h2>
           <div className="space-y-8">
             {/* Founder Ali Mohd Wani */}
-            <div className="flex items-center space-x-6">
+            <div className="flex flex-col md:flex-row items-center space-x-6 space-y-6">
               <Image
                 height={400}
                 width={400}
-                src="/images/people/md.png"
+                src="/images/people/md.jpg"
                 alt="Ali Mohd Wani"
                 className="w-40 h-40 rounded-full object-cover border-4 border-gray-300"
               />
@@ -79,11 +79,11 @@ const AboutPage: React.FC = () => {
             </div>
 
             {/* Founder Owais */}
-            <div className="flex items-center space-x-6">
+            <div className="flex flex-col md:flex-row items-center space-x-6 space-y-6">
               <Image
                 height={400}
                 width={400}
-                src="/images/people/owais.png"
+                src="/images/people/owais.jpg"
                 alt="Owais"
                 className="w-40 h-40 rounded-full object-cover border-4 border-gray-300"
               />
@@ -100,11 +100,11 @@ const AboutPage: React.FC = () => {
             </div>
 
             {/* Sales Head */}
-            <div className="flex items-center space-x-6">
+            <div className="flex flex-col md:flex-row items-center space-x-6 space-y-6">
               <Image
                 height={400}
                 width={400}
-                src="/images/people/farman.png"
+                src="/images/people/farman.jpg"
                 alt="furqan"
                 className="w-40 h-40 rounded-full object-cover border-4 border-gray-300"
               />

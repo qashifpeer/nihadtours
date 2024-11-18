@@ -4,7 +4,7 @@ import SMTPTransport from 'nodemailer/lib/smtp-transport';  // Import SMTPTransp
 
 
 export async function POST(request: Request) {
-  const { name, phone, arrivalDate } = await request.json();
+  const { name, phone, email, arrivalDate } = await request.json();
 
   const transporter = nodemailer.createTransport({
     // host: process.env.EMAIL_HOST,
@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
     subject: 'New Lead Generated',
-    text: `Name: ${name}\nPhone: ${phone}\nArrivalDate: ${arrivalDate}`,
+    text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nArrivalDate: ${arrivalDate}`,
   };
 
   try {

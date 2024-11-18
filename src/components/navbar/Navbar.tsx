@@ -39,10 +39,10 @@ const Navbar: React.FC = () => {
 
           {/* Right Social Icons */}
           <div className="hidden md:flex items-center space-x-3">
-            <a href="#" target="blank" aria-label="Facebook" className="hover:text-gray-400">
+            <a href="https://www.facebook.com/profile.php?id=61568542919646" target="blank" aria-label="Facebook" className="hover:text-gray-400">
               <FaFacebook />
             </a>
-            <a href="https://www.instagram.com/nihad.tour/" target="blank" aria-label="Instagram" className="hover:text-gray-400">
+            <a href="https://www.instagram.com/nihad_tour_and_travels/" target="blank" aria-label="Instagram" className="hover:text-gray-400">
               <FaInstagram />
             </a>
             <a href="https://wa.me/+917006031831" target="blank" aria-label="Whatsapp" className="hover:text-gray-400">

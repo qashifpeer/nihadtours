@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 const FeedbackForm: React.FC = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
   const [arrivalDate, setArrivalDate] = useState('');
   const [status, setStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);  // Add loading state
@@ -19,13 +20,14 @@ const FeedbackForm: React.FC = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, phone, arrivalDate }),
+        body: JSON.stringify({ name, phone, email, arrivalDate }),
       });
 
       if (response.ok) {
         setStatus('Quote Received Successfully, We will be in touch with you very soon!');
         setName('');
         setPhone('');
+        setEmail('');
         setArrivalDate('');
       } else {
         setStatus('Failed to send feedback. Please try again.');
@@ -59,6 +61,16 @@ const FeedbackForm: React.FC = () => {
             className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            placeholder='Email'
+            className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>

@@ -10,6 +10,7 @@ import React, { useState } from "react";
 const ContactPage: React.FC = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [arrivalDate, setArrivalDate] = useState("");
   const [status, setStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState(false); // Add loading state
@@ -24,7 +25,7 @@ const ContactPage: React.FC = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, phone, arrivalDate }),
+        body: JSON.stringify({ name, phone, email, arrivalDate }),
       });
 
       if (response.ok) {
@@ -33,6 +34,7 @@ const ContactPage: React.FC = () => {
         );
         setName("");
         setPhone("");
+        setEmail("");
         setArrivalDate("");
       } else {
         setStatus("Failed to send feedback. Please try again.");
@@ -50,7 +52,7 @@ const ContactPage: React.FC = () => {
         <h1 className="text-3xl text-center font-semibold text-gray-800 mb-6 max-w-lg underline uppercase pt-4">
           Contact Us
         </h1>
-        {status && <p className="text-center text-sm mb-4">{status}</p>}
+        {status && <p className="text-center text-sm mb-4 text-green-800">{status}</p>}
         <form
           onSubmit={handleSubmit}
           className="flex flex-col md:flex-row gap-2  justify-center items-center"
@@ -72,6 +74,16 @@ const ContactPage: React.FC = () => {
               className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-52 border-2 border-orange-800 rounded-3xl shadow-sm text-black py-2 px-2"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>

@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div className="bg-black">
       <Hero />
+      <Banner />
       <HeroWithCards />
       <TourPackages />
       <FixedHero />
       <Feedback />
-      <Banner />
       <ImageCarousel />
     
     

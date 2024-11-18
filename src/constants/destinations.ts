@@ -35,5 +35,45 @@ export const  destinationsData :  DestinationCardProps[] = [
         desc: 'Serenity overloaded',
         aboutPlace: "Gulmarg, known as the 'Meadow of Flowers', is one of Kashmir's most famous tourist spots. Located in the Pir Panjal range, it’s famous for its stunning landscapes and adventure activities. In winter, Gulmarg turns into a popular skiing destination, with some of the best slopes in Asia. During summer, the green meadows and colorful flowers make it a peaceful retreat. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the mountains. Whether you're skiing, hiking, or simply enjoying the scenery, Gulmarg is a perfect destination for all seasons."
 
-    }
+    },
+    {
+        title: 'sonamarg',
+        slug: 'sonamarg',
+        imageUrl: '/images/destinations/sonamarg.jpg',
+        desc: 'Serenity overloaded',
+        aboutPlace: "Gulmarg, known as the 'Meadow of Flowers', is one of Kashmir's most famous tourist spots. Located in the Pir Panjal range, it’s famous for its stunning landscapes and adventure activities. In winter, Gulmarg turns into a popular skiing destination, with some of the best slopes in Asia. During summer, the green meadows and colorful flowers make it a peaceful retreat. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the mountains. Whether you're skiing, hiking, or simply enjoying the scenery, Gulmarg is a perfect destination for all seasons."
+
+    },
+    {
+        title: 'bangus valley',
+        slug: 'bangus',
+        imageUrl: '/images/destinations/bangus_meadow.jpg',
+        desc: 'Serenity overloaded',
+        aboutPlace: "Gulmarg, known as the 'Meadow of Flowers', is one of Kashmir's most famous tourist spots. Located in the Pir Panjal range, it’s famous for its stunning landscapes and adventure activities. In winter, Gulmarg turns into a popular skiing destination, with some of the best slopes in Asia. During summer, the green meadows and colorful flowers make it a peaceful retreat. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the mountains. Whether you're skiing, hiking, or simply enjoying the scenery, Gulmarg is a perfect destination for all seasons."
+
+    },
+    {
+        title: 'gerez',
+        slug: 'gurez',
+        imageUrl: '/images/destinations/gurez.jpg',
+        desc: 'Serenity overloaded',
+        aboutPlace: "Gulmarg, known as the 'Meadow of Flowers', is one of Kashmir's most famous tourist spots. Located in the Pir Panjal range, it’s famous for its stunning landscapes and adventure activities. In winter, Gulmarg turns into a popular skiing destination, with some of the best slopes in Asia. During summer, the green meadows and colorful flowers make it a peaceful retreat. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the mountains. Whether you're skiing, hiking, or simply enjoying the scenery, Gulmarg is a perfect destination for all seasons."
+
+    },
+    {
+        title: 'leh',
+        slug: 'leh',
+        imageUrl: '/images/destinations/leh.jpg',
+        desc: 'Serenity overloaded',
+        aboutPlace: "Gulmarg, known as the 'Meadow of Flowers', is one of Kashmir's most famous tourist spots. Located in the Pir Panjal range, it’s famous for its stunning landscapes and adventure activities. In winter, Gulmarg turns into a popular skiing destination, with some of the best slopes in Asia. During summer, the green meadows and colorful flowers make it a peaceful retreat. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the mountains. Whether you're skiing, hiking, or simply enjoying the scenery, Gulmarg is a perfect destination for all seasons."
+
+    },
+    {
+        title: 'ladakh',
+        slug: 'ladakh',
+        imageUrl: '/images/destinations/ladakh.jpg',
+        desc: 'Serenity overloaded',
+        aboutPlace: "Gulmarg, known as the 'Meadow of Flowers', is one of Kashmir's most famous tourist spots. Located in the Pir Panjal range, it’s famous for its stunning landscapes and adventure activities. In winter, Gulmarg turns into a popular skiing destination, with some of the best slopes in Asia. During summer, the green meadows and colorful flowers make it a peaceful retreat. The Gulmarg Gondola, one of the highest cable cars in the world, offers breathtaking views of the mountains. Whether you're skiing, hiking, or simply enjoying the scenery, Gulmarg is a perfect destination for all seasons."
+
+    },
 ]
