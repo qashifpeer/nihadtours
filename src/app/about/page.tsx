@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
               />
               <div>
                 <h3 className="text-xl font-semibold text-gray-200">
-                  Ali Mohd Wani (CEO)
+                  Ali Mohd Wani (Member of NPC club Punb)
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
                   As the visionary behind the company, Ali leads the overall
@@ -113,9 +113,7 @@ const AboutPage: React.FC = () => {
                   Furqan Peer (Operation Director)
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Furqan is responsible for leading our sales team, crafting
-                  personalized travel solutions for every customer, and ensuring
-                  a smooth journey from inquiry to booking.
+                Furqan oversees the smooth execution of our travel services, ensuring that every aspect of the customer journey, from planning to completion, is handled with precision and excellence. His expertise ensures a flawless travel experience for our clients.
                 </p>
               </div>
             </div>
@@ -131,7 +129,7 @@ const AboutPage: React.FC = () => {
               />
               <div>
                 <h3 className="text-xl font-semibold text-gray-200">
-                  Nihad Ali Wani (Reservation Manager)
+                Farukh Nihad Ali Wani (Reservation Manager)
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
                 Nihad ensures that every booking is handled with precision and care. From securing the best accommodations to coordinating travel logistics, he guarantees a seamless experience for our customers.
