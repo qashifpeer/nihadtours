@@ -1,6 +1,7 @@
 // app/packages/[slug]/page.tsx
 import { packagesData } from "@/constants/packages";
 import Image from "next/image";
+import Link from "next/link";
 
 interface PackageProps {
   params: { slug: string; title: string };
@@ -26,10 +27,10 @@ export default async function PackagePage({ params }: PackageProps) {
         <h1 className="text-2xl font-bold mb-4"></h1>
         <div className="flex justify-center items-center w-3/4">
           <Image
-            src={packageData.imageUrl}
+            src={packageData.coverImageUrl}
             alt={packageData.title}
-            width={300}
-            height={100}
+            width={1600}
+            height={1200}
             className="cover w-full h-72 rounded"
           />
         </div>
@@ -46,18 +47,25 @@ export default async function PackagePage({ params }: PackageProps) {
           {packageData.tourDays.filter((day)=> day.desc !== "-")
           .map((day,i)=>(
             <div
-              className="bg-slate-950 rounded w-full flex gap-6 md:px-2 py-2 mt-2"
+              className="bg-slate-950 rounded w-full flex gap-6 py-2 mt-2  items-center"
               key={i}
             >
-              <p className="rounded-lg text-sm text-orange-800 bg-slate-100 px-2 py-2 ubuntu-bold uppercase">
+              <p className="rounded-lg text-sm text-orange-800 bg-slate-100 px-2 py-2 ubuntu-bold uppercase min-w-20 h-10 text-center">
                 { day.title}
               </p>
               <p className=" px-4 py-2 ubuntu-regular capitalize text-slate-300">
                 {day.desc}
               </p>
+              
             </div>
           ))}
         </div>
+        <Link href="/contact">
+          {" "}
+          <button className="mt-6 px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-full text-lg uppercase transition duration-300">
+            Book Now
+          </button>
+        </Link>
       </div>
     </div>
   );

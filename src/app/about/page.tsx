@@ -110,12 +110,32 @@ const AboutPage: React.FC = () => {
               />
               <div>
                 <h3 className="text-xl font-semibold text-gray-200">
-                  Furqan Peer (Sales Head)
+                  Furqan Peer (Operation Director)
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
                   Furqan is responsible for leading our sales team, crafting
-                  personalised travel solutions for every customer, and ensuring
+                  personalized travel solutions for every customer, and ensuring
                   a smooth journey from inquiry to booking.
+                </p>
+              </div>
+            </div>
+
+             {/* Reservation Manager */}
+             <div className="flex flex-col md:flex-row items-center space-x-6 space-y-6">
+              <Image
+                height={400}
+                width={400}
+                src="/images/people/nihad_ali.jpg"
+                alt="furqan"
+                className="w-40 h-40 rounded-full object-cover border-4 border-gray-300"
+              />
+              <div>
+                <h3 className="text-xl font-semibold text-gray-200">
+                  Nihad Ali Wani (Reservation Manager)
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                Nihad ensures that every booking is handled with precision and care. From securing the best accommodations to coordinating travel logistics, he guarantees a seamless experience for our customers.
+
                 </p>
               </div>
             </div>
